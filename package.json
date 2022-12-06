@@ -1,0 +1,22 @@
+{
+  "name": "js-performance-benchmarks",
+  "version": "1.0.0",
+  "description": "Run JS and TS benchmarks for analysing code and query performance.",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raisa2010/js-performance-benchmarks.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/raisa2010/js-performance-benchmarks/issues"
+  },
+  "homepage": "https://github.com/raisa2010/js-performance-benchmarks#readme",
+  "devDependencies": {
+    "benny": "^3.7.1"
+  }
+}
