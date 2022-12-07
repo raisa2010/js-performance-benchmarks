@@ -6,6 +6,7 @@
   "scripts": {
     "test": "test"
   },
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/raisa2010/js-performance-benchmarks.git"
@@ -18,5 +19,9 @@
   "homepage": "https://github.com/raisa2010/js-performance-benchmarks#readme",
   "devDependencies": {
     "benny": "^3.7.1"
+  },
+  "dependencies": {
+    "crypto": "^1.0.1",
+    "nanoid": "^4.0.0"
   }
 }

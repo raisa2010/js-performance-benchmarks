@@ -1,18 +1,20 @@
-const b = require('benny')
+import  { suite, add, cycle, save, complete } from 'benny'
+import { randomBytes } from 'crypto'
+import { nanoid } from 'nanoid'
 
-b.suite(
-    'Example',
+suite(
+    'Unique ID Generator',
 
-    b.add('Reduce two elements', () => {
-        ;[1, 2].reduce((a, b) => a + b)
+    add('Use NanoID', () => {
+        ;const id = nanoid(10)
     }),
 
-    b.add('Reduce five elements', () => {
-        ;[1, 2, 3, 4, 5].reduce((a, b) => a + b)
+    add('Use Crypto', () => {
+        ;const id = randomBytes(10).toString('hex')
     }),
 
-    b.cycle(),
-    b.complete(),
-    b.save({ file: 'reduce', version: '1.0.0' }),
-    b.save({ file: 'reduce', format: 'chart.html' }),
+    cycle(),
+    complete(),
+    save({ file: 'unique_id', version: '1.0.0' }),
+    save({ file: 'unique_id', format: 'chart.html' }),
 )

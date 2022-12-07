@@ -1,0 +1,27 @@
+{
+  "name": "Unique ID Generator",
+  "date": "2022-12-07T00:43:20.996Z",
+  "version": "1.0.0",
+  "results": [
+    {
+      "name": "Use NanoID",
+      "ops": 6332515,
+      "margin": 7.24,
+      "percentSlower": 0
+    },
+    {
+      "name": "Use Crypto",
+      "ops": 363331,
+      "margin": 15.72,
+      "percentSlower": 94.26
+    }
+  ],
+  "fastest": {
+    "name": "Use NanoID",
+    "index": 0
+  },
+  "slowest": {
+    "name": "Use Crypto",
+    "index": 1
+  }
+}

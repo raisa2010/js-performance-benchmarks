@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" />
     <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
-    <title>Example</title>
+    <title>Unique ID Generator</title>
     <style>
       body {
         margin: 0;
@@ -28,7 +28,7 @@
   </head>
   <body>
     <div class="container">
-      <canvas id="chart1670317162698" width="16" height="9"></canvas>
+      <canvas id="chart1670373800996" width="16" height="9"></canvas>
     </div>
     <script>
       const format = (num) => {
@@ -51,18 +51,18 @@
           chunked.map((chunk) => chunk.join('')).join(' ') + fractionStr
         )
       }
-      const ctx1670317162698 = document
-        .getElementById('chart1670317162698')
+      const ctx1670373800996 = document
+        .getElementById('chart1670373800996')
         .getContext('2d')
-      const chart1670317162698 = new Chart(ctx1670317162698, {
+      const chart1670373800996 = new Chart(ctx1670373800996, {
         type: 'bar',
         data: {
-          labels: ["Reduce two elements","Reduce five elements"],
+          labels: ["Use NanoID","Use Crypto"],
           datasets: [
             {
-              data: [87543867,54947414],
-              backgroundColor: ["hsl(120, 85%, 55%)","hsl(75.324, 85%, 55%)"],
-              borderColor: ["hsl(120, 85%, 55%)","hsl(75.324, 85%, 55%)"],
+              data: [6332515,363331],
+              backgroundColor: ["hsl(120, 85%, 55%)","hsl(6.887999999999995, 85%, 55%)"],
+              borderColor: ["hsl(120, 85%, 55%)","hsl(6.887999999999995, 85%, 55%)"],
               borderWidth: 2,
             },
           ],
@@ -72,7 +72,7 @@
           plugins: {
             title: {
               display: true,
-              text: 'Example',
+              text: 'Unique ID Generator',
               font: { size: 20 },
               padding: 20,
             },
